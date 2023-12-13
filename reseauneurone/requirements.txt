@@ -1,0 +1,9 @@
+numpy
+matplotlib
+keras
+tensorflow
+pillow 
+opencv-python
+torch
+transformers
+openai
