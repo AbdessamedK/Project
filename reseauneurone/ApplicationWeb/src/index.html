@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <!-- le titre du document, qui apparait dans l'onglet du navigateur -->
+    <title>Raconte.ai</title>
+
+	<!-- lien pour des polices -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+    <!-- lien vers le style CSS externe  -->
+    <link href="style.css" rel="stylesheet" media="all" type="text/css">
+    
+    <!-- lien vers une image favicon (qui apparaitra dans l'onglet du navigateur) -->
+    <!--<link rel="shortcut icon" type="image/x-icon" href="img/logo.png" /> -->
+</head>
+<body>
+    <header>
+        <div class="header_titre">
+            RACONTE.AI
+        </div>
+    </header>
+    <hr>
+    <div class="description">
+        <h2>
+            Prenez vous en photo et laissez vous plonger dans un monde créé spécialement pour vous selon vos émotions .
+        </h2>
+    </div>
+    <div class="encadrement">
+        <div class="camera">
+            <video id="video">Le flux vidéo n'est pas disponible.</video>
+        </div>
+        <canvas id="canvas"> </canvas>
+    </div>
+    <div class="encadrement">
+        <button id="startbutton">Prendre une photo</button>
+    </div>
+    <div class="encadrement">
+        <h1 id = "emotion"></h1>
+    </div>
+    <div class="encadrement">
+        <h1 id = "histoire"></h1>
+    </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
