@@ -3,7 +3,7 @@
 Bienvenue sur mon dépôt GitHub qui regroupe plusieurs projets réalisés au cours de mes études. Chaque projet est contenu dans un dossier distinct avec son propre fichier README détaillé.
 
 ## 1. [Projet CNN - reseauneuronne](reseauneurone)
-Un projet de réseau de neurones convolutionnels (CNN) développé pour explorer les applications de l'apprentissage profond. Consultez le [README associé](reseauneuronne/README.md) pour obtenir des informations détaillées sur l'installation, l'utilisation et les fonctionnalités du projet.
+Un projet de réseau de neurones convolutionnels (CNN) développé pour explorer les applications de l'apprentissage profond. Consultez le [README associé](reseauneurone/README.md) pour obtenir des informations détaillées sur l'installation, l'utilisation et les fonctionnalités du projet.
 
 ## 2. [Gestion de Musique - serial-critique](serial-critique)
 Un projet de site web dédié à la gestion de musique.
