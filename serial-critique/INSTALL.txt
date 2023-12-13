@@ -1,0 +1,30 @@
+#########################################################
+Fichier d'aide pour utiliser le site "serial-critique"
+Cours de BDW - Bases de données et programmation web
+Fabien Duchateau, Université Claude Bernard Lyon 1 - 2022
+#########################################################
+
+
+Pour utiliser ce site sur le serveur de l'UE (bdw.univ-lyon1.fr), quatre étapes :
+
+- se connecter à PHPMyAdmin (http://bdw.univ-lyon1.fr/phpmyadmin), choisir l'onglet "importer", et importer le fichier "bd.sql". Cela doit créer les tables dans votre BD.
+
+- éditer le fichier "inc/config-bd.php" et modifier les valeurs des constantes "UTILISATRICE", "MOTDEPASSE" et "BDD".
+
+- envoyer le répertoire "serial-critique" sur le serveur (soit avec scp ou rsync en ligne de commande, soit avec un outil graphique comme FileZilla).
+
+- ouvrir un navigateur et saisir l'url http://bdw.univ-lyon1.fr/p1234567/serial-critique/
+
+
+=========================================================
+
+
+Pour utiliser ce site EN LOCAL (sur votre machine avec XAMPP ou équivalent), quatre étapes :
+
+- se connecter à PHPMyAdmin (par ex, http://localhost/phpmyadmin), choisir l'onglet "importer", et importer le fichier "bd.sql". Cela doit créer les tables dans votre BD.
+
+- éditer le fichier "inc/config-bd.php" et modifier les valeurs des constantes "UTILISATRICE", "MOTDEPASSE" et "BDD".
+
+- déplacer le répertoire "serial-critique" dans le répertoire public de XAMPP (généralement "xampp/htdocs/").
+
+- ouvrir un navigateur et saisir l'url http://localhost/serial-critique/
