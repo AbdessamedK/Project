@@ -7,7 +7,7 @@ from transformers import ViTForImageClassification, ViTImageProcessor
 import openai
 
 
-openai.api_key = "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"
+openai.api_key = ""
 
 model = ViTForImageClassification.from_pretrained("../../Reconnaissance_Emotions/lebin")
 processor = ViTImageProcessor.from_pretrained("../../Reconnaissance_Emotions/lebin")
