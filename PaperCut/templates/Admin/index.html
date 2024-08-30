@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Links</title>
+    <script>
+        const generate_link_url = "{{ url_for('generate_link') }}" ;
+        const get_list_url = "{{ url_for('get_list') }}" ;
+        const get_all_url = "{{ url_for('get_all') }}" ;
+        const delete_url = "{{ url_for('delete') }}" ;
+    </script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Admin/style_admin.css') }}">
+    <script src="{{ url_for('static', filename='js/Admin/app.js') }}" defer></script>
+</head>
+<body>
+    <div class="container">
+        <form class="form" id="form">
+            <h2>Generation de liens</h2>
+            <div class="form-group">
+                <label for="group">Groupe</label>
+                <select id="group" name="group">
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="max-accounts">Limite d'utilisation</label>
+                <input type="number" id="max-accounts" name="max-accounts" required>
+            </div>
+            <button type="submit">Générer</button>
+        </form>
+    </div>
+    <div class="fond-table">
+        <div class="table-container">
+            <table id="tableau_lien">
+                <thead>
+                    <tr>
+                        <th>URL</th>
+                        <th>Groupe</th>
+                        <th>Limite d'utilisation</th>
+                        <th>Nombre de compte crée</th>
+                        <th style="color: red;">🗑</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

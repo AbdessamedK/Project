@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Admin</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/Admin/login.css') }}">
+        <script>
+            function validateForm() {
+                const username = document.querySelector("#username").value;
+                const password = document.querySelector("#password").value;
+                const usernameRegex = /^[a-zA-Z]+$/;
+                const passwordRegex = /^[a-zA-Z0-9!?]+$/;
+    
+                if (!usernameRegex.test(username)) {
+                    alert("Le nom d'utilisateur peut contenir que des lettres.");
+                    return false;
+                }
+                if (!passwordRegex.test(password)) {
+                    alert("Mauvais mot de passe !");
+                    return false;
+                }
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="form-container">
+            <form action="{{ url_for('login') }}" method="post" onsubmit="return validateForm()">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                <br/>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <br/>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </body>
+</html>

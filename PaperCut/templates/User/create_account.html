@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créez votre compte</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/User/style.css') }}">
+    
+    <script src="{{ url_for('static', filename='js/User/script.js') }}" defer></script>
+    <script type="text/javascript" src="https://unpkg.com/validator@latest/validator.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.4/purify.min.js"></script>
+    <script>
+        const submit_url = "{{ url_for('submit') }}" ;
+    </script>
+</head>
+<header>
+    <img class="logo" src="{{ url_for('static', filename='img/logo_H7.png') }}" alt="logo_H7">
+    <h1>impression</h1>
+    <img class="logoimp" src="{{ url_for('static', filename='img/printer.png') }}" alt="logo_imp">
+</header>
+<body>
+    <div class="container">
+        <form id="signupForm" class="form">
+            <h2> H7 </h2>
+            <h3> Créer mon compte <br/> impression </h3>
+            <p> Bienvenue sur l'espace de création de compte pour l'impression. </p>
+            <p> Merci de remplir les champs ci-dessous afin de pouvoir utiliser les imprimantes
+                mises à votre disposition. </p>
+            <p> Si vous recontrez un problème, n'hésitez pas à contacter notre équipe technique. </p>
+            <br/>  
+            <div class="form-group">
+                <label for="name">Nom complet :</label>
+                <input type="text" id="name" name="name" required placeholder="Ex: Jean Dubois">
+            </div>
+            <div class="form-group">
+                <label for="username">Nom d'utilisateur :</label>
+                <input type="text" id="username" name="username" required placeholder="Ex: jean.dubois">
+            </div>
+            <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required placeholder="Ex: jean@example.com">
+            </div>
+            <div class="form-group">
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" name="password" required>
+                <span id="cond1">8 caractères</span> 
+                <span id="cond2">1 caractère spécial</span>
+            </div>
+            <div class="form-group">
+                <label for="confirmpassword">Confirmation du mot de passe :</label>
+                <input type="password" id="confirmpassword" name="confirmpassword" required>
+            </div> 
+            <button id="submit" type="submit">Créer mon compte</button>
+            <p id="error" style="color: red; display: none; font-weight: bold;">Les mots de passe ne correspondent pas.</p>
+            <p id="error_nomc" style="color: red; display: none; font-weight: bold;">Le nom complet doit contenir que des lettres.</p>
+            <p id="error_username" style="color: red; display: none; font-weight: bold;">Le nom d'utilisateur ne doit contenir que des lettres et le caractère "."</p>
+            <p id="error_email" style="color: red; display: none; font-weight: bold;">Veuillez entrer une adresse email valide.</p>
+        </form>
+    </div>
+</body>
+</html>
