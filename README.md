@@ -14,4 +14,8 @@ Un mini-jeu développé en C++ à l'aide de la bibliothèque SDL2. Plongez dans 
 ## 4. [Jeu Tetris Java - tetris](tetris)
 Une implémentation du jeu Tetris en Java. Explorez les mécanismes du jeu en consultant le [README associé](tetris/README.md) pour des détails sur l'exécution du jeu et d'autres informations pertinentes.
 
-N'hésitez pas à explorer chaque projet individuellement en consultant les fichiers README associés dans leurs répertoires respectifs. Pour des questions, des commentaires ou des suggestions, n'hésitez pas à me contacter.
+## 5. [Logiciel Web PaperCut - papercut](papercut)
+PaperCut est un logiciel web avec deux interfaces : une interface admin et une interface utilisateur. Les administrateurs peuvent générer des liens que les utilisateurs peuvent utiliser pour créer des comptes PaperCut.
+
+## 6. [Affichage Température - temperature](temperature)
+Ce projet est une page web statique qui utilise l'API Meraki pour communiquer avec des capteurs de température. Il récupère la température et l'affiche sur la page web.
