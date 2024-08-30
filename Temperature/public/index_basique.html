@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature H7</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        .bloc {
+            flex: 1 1 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .bloc div {
+            text-align: center;
+        }
+        .label {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .temperature {
+            font-size: 30px;
+            color: #333;
+        }
+        .temperature span {
+            font-size: 24px;
+            font-weight: normal;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="bloc" id="bloc1">
+        <div>
+            <div class="label">West_1</div>
+            <div class="temperature"><span>Température:</span> 27,2°C</div>
+        </div>
+    </div>
+    <div class="bloc" id="bloc2">
+        <div>
+            <div class="label">East_1</div>
+            <div class="temperature"><span>Température:</span> 27,2°C</div>
+        </div>
+    </div>
+    <div class="bloc" id="bloc3">
+        <div>
+            <div class="label">West_RDC</div>
+            <div class="temperature"><span>Température:</span> 27,2°C</div>
+        </div>
+    </div>
+    <div class="bloc" id="bloc4">
+        <div>
+            <div class="label">East_RDC</div>
+            <div class="temperature"><span>Température:</span> 27,2°C</div>
+        </div>
+    </div>
+</body>
+</html>
