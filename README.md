@@ -24,3 +24,20 @@ Ce projet est une page web statique qui utilise l'API Meraki pour communiquer av
 Un projet de robot LEGO Mindstorms EV3 combinant **robotique et vision par ordinateur**.  
 Le robot est capable de **reconnaître et analyser son environnement** pour naviguer de manière autonome dans une arène.  
 Pour plus de détails sur la structure du projet, consultez le [README associé](RobotEV3/README.md).
+
+## 8. [Portal – Simulation de portails en 3D avec OpenGL](Portal)
+Un projet utilisant **OpenGL** pour simuler des portails dimensionnels.  
+Le projet met en œuvre :
+- La manipulation des matrices de transformation pour gérer la traversée des portails.
+- L’utilisation de **shaders GLSL** pour le rendu des objets et portails.
+- Des algorithmes géométriques comme l’**intersection rayon-triangle** pour détecter précisément quand un objet traverse un portail.
+Pour plus de détails, consultez le [README associé](Portal/README.md).
+
+## 9. [Analyse d’Images – TP1 et TP2](Analyse)
+Projets en **C++** sur le traitement et l’analyse d’images numériques :  
+- **TP1** : Implémentation de traitements de base et avancés (conversion en niveaux de gris, inversion, seuillage, filtrage, détection de contours).  
+- **TP2** : Détection robuste de formes géométriques utilisant des méthodes comme :
+  - **Transformée de Hough** pour détecter des droites et des cercles.
+  - **RANSAC** pour estimer des modèles géométriques malgré le bruit et les points aberrants.
+- Les deux projets utilisent un type de données abstrait pour représenter les images et appliquer des transformations modulaires.
+Pour plus de détails, consultez le [README associé](Analyse/tp1/README.md) pour TP1 et [README associé](Analyse/tp2/README.md) pour TP2.
