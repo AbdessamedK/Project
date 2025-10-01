@@ -19,3 +19,8 @@ PaperCut est un logiciel web avec deux interfaces : une interface admin et une i
 
 ## 6. [Affichage Température - temperature](temperature)
 Ce projet est une page web statique qui utilise l'API Meraki pour communiquer avec des capteurs de température. Il récupère la température et l'affiche sur la page web.
+
+## 7. [RobotEV3 – Navigation autonome et Computer Vision](RobotEV3)
+Un projet de robot LEGO Mindstorms EV3 combinant **robotique et vision par ordinateur**.  
+Le robot est capable de **reconnaître et analyser son environnement** pour naviguer de manière autonome dans une arène.  
+Pour plus de détails sur la structure du projet, consultez le [README associé](RobotEV3/README.md).
