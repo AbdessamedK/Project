@@ -1,0 +1,13 @@
+{
+    "users": [
+        {"id" : "foo", "role" : "ADMIN"},
+        {"id" : "bar", "role" : "USER"}
+    ],
+    "messages" : [
+        {"content" : "Hello, world!", "date" : "-7", "owner" : "foo"},
+        {"content" : "What is this message?", "date" : "-3", "owner" : "bar"},
+        {"content" : "Good bye, world!", "date" : "now", "owner" : "bar"},
+        {"content" : "Hello, you!", "date" : "now", "owner" : "bar"},
+        {"content" : "Hello hello, world world world.", "date" : "now", "owner" : "foo"}
+    ]
+}

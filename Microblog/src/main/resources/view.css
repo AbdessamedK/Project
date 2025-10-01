@@ -1,0 +1,128 @@
+/* Styles globaux */
+.root {
+    -fx-background-color: #FFFFFF;
+    -fx-padding: 10px;
+}
+
+.label, 
+.message-box .label, 
+.button {
+    -fx-font-family: "Segoe UI", "Helvetica Neue", "Arial", sans-serif;
+    -fx-font-weight: bold;
+}
+
+.label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #000000;
+}
+
+.labelOther {
+    -fx-font-size: 12px;
+    -fx-text-fill: #323537;
+    -fx-font-weight: normal;
+}
+
+.button {
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 5px 10px;
+    -fx-font-size: 12px;
+    -fx-text-fill: #FFFFFF;
+}
+
+.deleteButton {
+    -fx-background-color: #FF0000;
+}
+
+.publishButton {
+    -fx-background-color: #0063b2;
+}
+
+.bookButton {
+    -fx-background-color: #FFDE21;
+}
+
+/* Zones de contenu */
+.hbox, 
+.userBox, 
+.userMsgBox, 
+.scroll-pane {
+    -fx-background-color: #FFFFFF;
+}
+
+.hbox {
+    -fx-border-color: #000000;
+    -fx-spacing: 15px;
+    -fx-padding: 10px;
+}
+
+.scroll-pane {
+    -fx-border-color: #2D2D2D;
+}
+
+.scroll-pane > .corner {
+    -fx-background-color: #2D2D2D;
+}
+
+.scroll-pane, 
+.scroll-bar:horizontal, 
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:horizontal .track, 
+.scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb, 
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #000000;
+    -fx-background-radius: 5em;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.increment-button, 
+.decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+/* Boîte de message */
+.message-box {
+    -fx-background-color: #323537;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px;
+    -fx-margin: 5px;
+}
+
+.text-area {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #000000;
+    -fx-border-radius: 10px;
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+    -fx-font-size: 14px; 
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+}
+
+
+.combo-box {
+    -fx-background-color: #FFFFFF;
+    -fx-border-radius: 3px; 
+    -fx-border-color: #0063b2; 
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+    -fx-font-size: 10px; 
+    -fx-text-fill: #323537; 
+    -fx-background-insets: 0, 1; 
+    -fx-font-weight: bold;
+    -fx-border-width: 3px;
+}
