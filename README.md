@@ -42,8 +42,8 @@ Projets en **C++** sur le traitement et l’analyse d’images numériques :
 - Les deux projets utilisent un type de données abstrait pour représenter les images et appliquer des transformations modulaires.
 Pour plus de détails, consultez le [README associé](Analyse/tp1/README.md) pour TP1 et [README associé](Analyse/tp2/README.md) pour TP2.
 
-## 10. [Microblog – Application de microblogging en Python](Microblog)
-Microblog est une application web permettant de partager des messages courts, développée avec **Flask**.  
+## 10. [Microblog – Application de microblogging en Java](Microblog)
+Microblog est une application permettant de partager des messages courts.  
 Le projet illustre :
 - L'utilisation de **design patterns** pour une architecture modulaire et maintenable, incluant **Factory**, **Singleton** et **Observer**.  
 - La **gestion de projet agile** : planification des fonctionnalités, développement itératif, tests unitaires et déploiement sur serveur.  
